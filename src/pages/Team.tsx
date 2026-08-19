@@ -19,7 +19,7 @@ const Team = () => {
               <h1 className="display-4 fw-extrabold text-white mb-3">
                 {t("فريق شركة أطلس للاستشارات الهندسية", "Atlas Engineering Firm Team")}
               </h1>
-              <p className="fs-5 text-slate-300 mb-0" style={{ lineHeight: "1.8" }}>
+              <p className="fs-5 text-slate-300 mb-0" style={{ color:"white", lineHeight: "1.8" }}>
                 {t(
                   "نخبة من المهندسين والاستشاريين المعماريين، الإنشائيين، الكهربائيين، الميكانيكيين، وإداريي النظم والمالية.",
                   "A multidisciplinary team of experienced architectural, civil, electrical, mechanical engineers, accountants, and IT specialists."

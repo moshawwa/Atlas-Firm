@@ -70,7 +70,7 @@ const Services = () => {
               <h1 className="display-4 fw-extrabold text-white mb-3">
                 {t("منظومة خدمات استشارية متكاملة لجميع أنواع المشاريع", "Integrated Engineering & Architectural Consultancy")}
               </h1>
-              <p className="fs-5 text-slate-300 mb-0" style={{ lineHeight: "1.8" }}>
+              <p className="fs-5 text-slate-300 mb-0" style={{ color:"white",lineHeight: "1.8" }}>
                 {t(
                   "نقدم حلولاً هندسية مبتكرة ومصممة خصيصاً لتلبية احتياجات الأفراد والمؤسسات والجهات الاستثمارية.",
                   "We provide tailored engineering solutions for commercial developers, private residential owners, and public institutions."

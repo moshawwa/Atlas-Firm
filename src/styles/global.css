@@ -14,7 +14,8 @@ html {
 body {
   font-family: var(--font-family);
   color: var(--light-text);
-  background-color: var(--light-bg);
+  background: linear-gradient(180deg, rgba(248, 250, 252, 0.95) 0%, rgba(241, 245, 249, 0.95) 100%),
+              url("https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1920&q=80") fixed center/cover no-repeat;
   line-height: 1.6;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
@@ -45,8 +46,14 @@ a {
 }
 
 .bg-dark-slate {
-  background-color: var(--dark-bg);
+  background: linear-gradient(135deg, rgba(15, 23, 42, 0.94) 0%, rgba(30, 41, 59, 0.90) 100%),
+              url("https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1920&q=80") fixed center/cover no-repeat !important;
   color: var(--dark-text);
+}
+
+.bg-light-slate {
+  background-color: rgba(241, 245, 249, 0.88) !important;
+  backdrop-filter: blur(8px);
 }
 
 .bg-dark-slate h1, 

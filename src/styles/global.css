@@ -407,9 +407,20 @@ a {
 /* Hero Section */
 .hero-wrapper {
   position: relative;
-  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  background: linear-gradient(135deg, rgba(15, 23, 42, 0.92) 0%, rgba(30, 41, 59, 0.85) 100%),
+              url("https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1920&q=80") center/cover no-repeat;
   color: var(--white);
   padding: 120px 0 100px 0;
+  overflow: hidden;
+}
+
+/* Sub-page Header Banner with Architectural Background Image */
+.page-header-banner {
+  position: relative;
+  background: linear-gradient(135deg, rgba(15, 23, 42, 0.94) 0%, rgba(30, 41, 59, 0.88) 100%),
+              url("https://images.unsplash.com/photo-1541888946425-d0fbb186a5b3?auto=format&fit=crop&w=1920&q=80") center/cover no-repeat;
+  color: var(--white);
+  padding: 80px 0;
   overflow: hidden;
 }
 

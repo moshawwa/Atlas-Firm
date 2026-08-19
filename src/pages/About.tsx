@@ -41,7 +41,7 @@ const About = () => {
               <h1 className="display-4 fw-extrabold text-white mb-3">
                 {t("خبرة معمارية وإنشائية تمتلك الرؤية والإتقان", "Architectural Mastery with Vision & Precision")}
               </h1>
-              <p className="fs-5 text-slate-300 mb-0" style={{ lineHeight: "1.8" }}>
+              <p className="fs-5 text-slate-300 mb-0" style={{ color:"white", lineHeight: "1.8" }}>
                 {t(
                   "تعد شركة أطلس للاستشارات الهندسية إحدى الشركات الرائدة في تقديم الحلول التخطيطية والمعمارية والإنشائية المبتكرة وفق أعلى المقاييس العالمية.",
                   "Atlas Engineering Firm is a premier consultancy delivering innovative architectural, structural, and master planning solutions."

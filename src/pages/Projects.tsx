@@ -42,7 +42,7 @@ const Projects = () => {
               <h1 className="display-4 fw-extrabold text-white mb-3">
                 {t("مشاريعنا الهندسية والمعمارية المتميزة", "Our Featured Architectural & Engineering Portfolio")}
               </h1>
-              <p className="fs-5 text-slate-300 mb-0" style={{ lineHeight: "1.8" }}>
+              <p className="fs-5 text-slate-300 mb-0" style={{ color:"white", lineHeight: "1.8" }}>
                 {t(
                   "تصفح نماذج من المشاريع المعمارية والإنشائية والتخطيطية التي قمنا بإعداد تصاميمها والإشراف عليها.",
                   "Explore real case studies of architectural designs, structural calculations, and master plans delivered by Atlas."
@@ -91,8 +91,8 @@ const Projects = () => {
         </div>
       </section>
 
-      {/* Projects Grid */}
-      <section className="section-padding bg-white">
+      {/* Projects Cards Grid */}
+      <section className="section-padding projects-section-bg">
         <div className="container px-4 px-lg-5">
           {filteredProjects.length === 0 ? (
             <div className="text-center py-5">

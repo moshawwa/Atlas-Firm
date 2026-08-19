@@ -56,6 +56,11 @@ a {
   backdrop-filter: blur(8px);
 }
 
+.bg-white {
+  background-color: rgba(255, 255, 255, 0.88) !important;
+  backdrop-filter: blur(8px);
+}
+
 .bg-dark-slate h1, 
 .bg-dark-slate h2, 
 .bg-dark-slate h3, 

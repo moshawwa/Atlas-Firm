@@ -61,7 +61,7 @@ const Services = () => {
   return (
     <div>
       {/* Header Banner */}
-      <section className="page-header-banner position-relative overflow-hidden">
+      <section className="banner-services position-relative overflow-hidden">
         <div className="hero-overlay-grid"></div>
         <div className="container px-4 px-lg-5 py-5 position-relative" style={{ zIndex: 2 }}>
           <div className="row justify-content-center text-center">

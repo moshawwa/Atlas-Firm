@@ -129,7 +129,7 @@ const Home = () => {
             <div className="col-md-3 col-6">
               <div className="stat-box">
                 <div className="stat-number text-white">18+</div>
-                <div className="text-slate-400 small mt-1 text-white">
+                <div className="text-slate-400 smallt-1 text-white">
                   {t("عاماً من الخبرة والتميّز", "Years of Excellence")}
                 </div>
               </div>

@@ -473,24 +473,22 @@ a {
               url("https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1920&q=80") fixed center/cover no-repeat !important;
 }
 
-/* Hero Logo Badge - Prominent & Clear Display */
+/* Hero Logo Badge - Clean White Display */
 .hero-logo-badge {
   display: inline-flex;
   align-items: center;
   gap: 20px;
   padding: 14px 28px 14px 18px;
-  background: rgba(15, 23, 42, 0.85);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border: 1.5px solid rgba(217, 119, 6, 0.5);
+  background: #ffffff;
+  border: 2px solid var(--accent);
   border-radius: 20px;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35), 0 0 25px rgba(217, 119, 6, 0.2);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35), 0 0 20px rgba(255, 255, 255, 0.3);
   transition: var(--transition-normal);
 }
 
 .hero-logo-badge:hover {
-  border-color: var(--accent);
-  box-shadow: 0 10px 35px rgba(217, 119, 6, 0.35);
+  border-color: #b45309;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.45);
   transform: translateY(-3px);
 }
 
@@ -498,17 +496,17 @@ a {
   height: 85px;
   width: auto;
   object-fit: contain;
-  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.5)) brightness(1.08);
+  filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.15));
 }
 
 .hero-logo-divider {
   width: 2px;
   height: 55px;
-  background: linear-gradient(180deg, rgba(217, 119, 6, 0.8) 0%, rgba(255, 255, 255, 0.2) 100%);
+  background: #cbd5e1;
 }
 
 .hero-logo-text {
-  color: #fbbf24;
+  color: var(--dark-bg);
   font-weight: 800;
   font-size: 20px;
   letter-spacing: 0.5px;

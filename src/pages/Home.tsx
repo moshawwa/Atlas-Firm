@@ -84,7 +84,6 @@ const Home = () => {
                   </div>
                   <div>
                     <h5 className="text-white fw-bold m-0">{t("رؤيتنا الهندسية", "Our Engineering Vision")}</h5>
-                    <small className="text-gold">Engineering Precision & Innovation</small>
                   </div>
                 </div>
 
@@ -121,7 +120,7 @@ const Home = () => {
           <div className="row g-4 mt-5 pt-4 border-top border-slate-800">
             <div className="col-md-3 col-6">
               <div className="stat-box">
-                <div className="stat-number">+150</div>
+                <div className="stat-number text-white">+150</div>
                 <div className="text-slate-400 small mt-1 text-white">
                   {t("مشروعاً هندسياً منجزاً", "Completed Projects")}
                 </div>
@@ -129,7 +128,7 @@ const Home = () => {
             </div>
             <div className="col-md-3 col-6">
               <div className="stat-box">
-                <div className="stat-number">18+</div>
+                <div className="stat-number text-white">18+</div>
                 <div className="text-slate-400 small mt-1 text-white">
                   {t("عاماً من الخبرة والتميّز", "Years of Excellence")}
                 </div>
@@ -137,7 +136,7 @@ const Home = () => {
             </div>
             <div className="col-md-3 col-6">
               <div className="stat-box">
-                <div className="stat-number">100%</div>
+                <div className="stat-number text-white">100%</div>
                 <div className="text-slate-400 small mt-1 text-white">
                   {t("مطابقة للكودات والاعتمادات", "Municipal Code Compliance")}
                 </div>
@@ -145,7 +144,7 @@ const Home = () => {
             </div>
             <div className="col-md-3 col-6">
               <div className="stat-box">
-                <div className="stat-number">11</div>
+                <div className="stat-number text-white">11</div>
                 <div className="text-slate-400 small mt-1 text-white">
                   {t("مهندساً واستشارياً متفوقاً", "Senior Consultants")}
                 </div>

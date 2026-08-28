@@ -42,9 +42,25 @@ const Home = () => {
         <div className="container px-4 px-lg-5 position-relative" style={{ zIndex: 2 }}>
           <div className="row align-items-center g-5">
             <div className="col-lg-7">
-              <span className="section-badge mb-3">
-                {t("أطلس للاستشارات الهندسية", "Atlas Engineering Firm")}
-              </span>
+              <div className="hero-logo-badge mb-4">
+                <img
+                  src="/images/ATLAS  logo w arabic.png"
+                  alt="Atlas Engineering Logo"
+                  className="hero-logo-img"
+                  onError={(e) => {
+                    (e.target as HTMLElement).style.display = 'none';
+                  }}
+                />
+                <span className="hero-logo-divider"></span>
+                <div>
+                  <span className="hero-logo-text d-block">
+                    {t("أطلس للاستشارات الهندسية", "Atlas Engineering Consultancy")}
+                  </span>
+                  <small className="text-white-50 text-uppercase fw-semibold" style={{ fontSize: "11px", letterSpacing: "1.5px" }}>
+                    {t("شركة أطلس • فلسطين ومصر", "Atlas Engineering Firm • Palestine & Egypt")}
+                  </small>
+                </div>
+              </div>
               <h1 className="display-4 fw-extrabold text-white mb-4 leading-tight">
                 {t("نبتكر المعمار.. ", "Sculpting Architecture.. ")} <br />
                 <span className="text-gold">

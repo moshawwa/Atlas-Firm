@@ -194,7 +194,7 @@ const Contact = () => {
               <div className="d-flex flex-column gap-4">
                 {/* Direct WhatsApp Button */}
                 <a
-                  href="https://wa.me/970599000000?text=مرحباً%20شركة%20أطلس%20للاستشارات%20الهندسية،%20أود%20الاستفسار%20عن%20استشارة%20هندسية"
+                  href="https://wa.me/201015778584?text=مرحباً%20شركة%20أطلس%20للاستشارات%20الهندسية،%20أود%20الاستفسار%20عن%20استشارة%20هندسية"
                   target="_blank"
                   rel="noreferrer"
                   className="p-4 bg-success text-white rounded-4 d-flex align-items-center justify-content-between text-decoration-none shadow-sm hover-lift"

@@ -82,7 +82,7 @@ const Services = () => {
       </section>
 
       {/* Detailed Services Grid */}
-      <section className="section-padding bg-white">
+      <section className="section-padding services-section-bg">
         <div className="container px-4 px-lg-5">
           <SectionTitle
             badge={t("مجالات التخصص", "ENGINEERING SPECIALTIES")}

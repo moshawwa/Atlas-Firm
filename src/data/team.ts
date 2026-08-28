@@ -47,7 +47,7 @@ export const teamData: TeamMember[] = [
     experienceYears: 14,
     email: "atlas.engineers20@gmail.com",
     linkedin: "https://linkedin.com",
-    image: "/images/team.jpg",
+    image: "/images/user-avatar.png",
     projectsLed: 50,
     featuredQuote: "السلامة المتكاملة والدقة الإنشائية هما الركيزة الأساسية لاستدامة المباني."
   },
@@ -64,7 +64,7 @@ export const teamData: TeamMember[] = [
     experienceYears: 9,
     email: "atlas.engineers20@gmail.com",
     linkedin: "https://linkedin.com",
-    image: "/images/team.jpg",
+    image: "/images/user-avatar.png",
     projectsLed: 38,
     featuredQuote: "الدراسة الإنشائية الدقيقة تضمن أعلى مستويات الأمان والجودة الميدانية."
   },
@@ -81,7 +81,7 @@ export const teamData: TeamMember[] = [
     experienceYears: 11,
     email: "atlas.engineers20@gmail.com",
     linkedin: "https://linkedin.com",
-    image: "/images/team.jpg",
+    image: "/images/user-avatar.png",
     projectsLed: 45,
     featuredQuote: "الحلول الكهربائية الذكية تمنح المباني كفاءة عالية وترشيداً مستداماً للطاقة."
   },
@@ -98,7 +98,7 @@ export const teamData: TeamMember[] = [
     experienceYears: 7,
     email: "atlas.engineers20@gmail.com",
     linkedin: "https://linkedin.com",
-    image: "/images/team.jpg",
+    image: "/images/user-avatar.png",
     projectsLed: 28,
     featuredQuote: "التكامل بين الدوائر الكهربائية والسلامة الميدانية يضمن أداء متوافقاً مع أعلى الكودات."
   },
@@ -115,7 +115,7 @@ export const teamData: TeamMember[] = [
     experienceYears: 12,
     email: "atlas.engineers20@gmail.com",
     linkedin: "https://linkedin.com",
-    image: "/images/team.jpg",
+    image: "/images/user-avatar.png",
     projectsLed: 40,
     featuredQuote: "الأنظمة الميكانيكية المتقدمة توفر بيئة داخلية صحية ومريحة لجميع المباني."
   },
@@ -132,7 +132,7 @@ export const teamData: TeamMember[] = [
     experienceYears: 5,
     email: "atlas.engineers20@gmail.com",
     linkedin: "https://linkedin.com",
-    image: "/images/team.jpg",
+    image: "/images/user-avatar.png",
     projectsLed: 22,
     featuredQuote: "التفكير الصناعي والهندسي يضمن سلاسة التشغيل وتقليل الهدر في المشاريع."
   },
@@ -149,7 +149,7 @@ export const teamData: TeamMember[] = [
     experienceYears: 3,
     email: "atlas.engineers20@gmail.com",
     linkedin: "https://linkedin.com",
-    image: "/images/team.jpg",
+    image: "/images/user-avatar.png",
     projectsLed: 18,
     featuredQuote: "التفاصيل المعمارية الدقيقة تمنح المساحات تميزاً وجمالاً فريداً."
   },
@@ -166,7 +166,7 @@ export const teamData: TeamMember[] = [
     experienceYears: 1,
     email: "atlas.engineers20@gmail.com",
     linkedin: "https://linkedin.com",
-    image: "/images/team.jpg",
+    image: "/images/user-avatar.png",
     projectsLed: 10,
     featuredQuote: "الشغف المعماري هو المحرك الأول لتقديم فضاءات معاصرة تلبي احتياجات العملاء."
   },
@@ -183,7 +183,7 @@ export const teamData: TeamMember[] = [
     experienceYears: 14,
     email: "atlas.engineers20@gmail.com",
     linkedin: "https://linkedin.com",
-    image: "/images/team.jpg",
+    image: "/images/user-avatar.png",
     projectsLed: 60,
     featuredQuote: "الرقابة المالية الشفافة تضمن استقرار المشاريع وتسليمها ضمن الميزانيات المحددة."
   },
@@ -200,7 +200,7 @@ export const teamData: TeamMember[] = [
     experienceYears: 5,
     email: "atlas.engineers20@gmail.com",
     linkedin: "https://linkedin.com",
-    image: "/images/team.jpg",
+    image: "/images/user-avatar.png",
     projectsLed: 25,
     featuredQuote: "التحول الرقمي السلس والأنظمة التقنية الآمنة تدعم الإنتاجية الهندسية العالية."
   }

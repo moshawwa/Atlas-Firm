@@ -19,7 +19,7 @@ const Team = () => {
               <h1 className="display-4 fw-extrabold text-white mb-3">
                 {t("فريق شركة أطلس للاستشارات الهندسية", "Atlas Engineering Firm Team")}
               </h1>
-              <p className="fs-5 text-slate-300 mb-0" style={{ color:"white", lineHeight: "1.8" }}>
+              <p className="fs-5 text-slate-300 mb-0" style={{ lineHeight: "1.8" }}>
                 {t(
                   "نخبة من المهندسين والاستشاريين المعماريين، الإنشائيين، الكهربائيين، الميكانيكيين، وإداريي النظم والمالية.",
                   "A multidisciplinary team of experienced architectural, civil, electrical, mechanical engineers, accountants, and IT specialists."
@@ -46,14 +46,17 @@ const Team = () => {
             {filteredTeam.map((member) => (
               <div key={member.id} className="col-lg-4 col-md-6">
                 <div className="atlas-card">
-                  <div className="team-card-img-wrapper">
+                  <div className="team-card-img-wrapper" style={{ backgroundColor: member.image.includes("user-avatar") ? "#f8fafc" : "transparent" }}>
                     <img
                       src={member.image}
                       alt={member.name}
                       className="atlas-card-img"
+                      style={{
+                        objectFit: member.image.includes("user-avatar") ? "contain" : "cover",
+                        padding: member.image.includes("user-avatar") ? "24px" : "0"
+                      }}
                       onError={(e) => {
-                        (e.target as HTMLImageElement).src =
-                          "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=800&q=80";
+                        (e.target as HTMLImageElement).src = "/images/user-avatar.png";
                       }}
                     />
                     <div className="team-social-overlay">

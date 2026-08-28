@@ -2,31 +2,35 @@ import { useState } from "react";
 import ProjectModal from "../components/ProjectModal";
 import { projectsData, type Project } from "../data/projects";
 import { useLanguage } from "../context/LanguageContext";
-import { FiSearch, FiMaximize2, FiMapPin, FiCalendar } from "react-icons/fi";
+import { FiSearch, FiMapPin, FiCalendar, FiArrowUpRight, FiLayers } from "react-icons/fi";
 
 const Projects = () => {
   const { t, isRtl } = useLanguage();
-  const [selectedCategory, setSelectedCategory] = useState("All");
-  const [searchQuery, setSearchQuery] = useState("");
-  const [activeProject, setActiveProject] = useState<Project | null>(null);
+  const [selectedCategory, setSelectedCategory] = useState<string>("All");
+  const [searchQuery, setSearchQuery] = useState<string>("");
+  const [activeModalProject, setActiveModalProject] = useState<Project | null>(null);
 
   const categories = [
     { key: "All", label: t("جميع المشاريع", "All Projects") },
-    { key: "Architectural", label: t("معماري", "Architectural") },
-    { key: "Structural", label: t("إنشائي", "Structural") },
-    { key: "Interior", label: t("تصميم داخلي", "Interior Design") },
-    { key: "Urban", label: t("تخطيط عمراني", "Urban Planning") },
-    { key: "Sustainable", label: t("مستدام", "Sustainable") }
+    { key: "Architectural", label: t("تصميم معماري", "Architectural Design") },
+    { key: "Structural", label: t("هندسة إنشائية", "Structural Engineering") },
+    { key: "Interior", label: t("تصميم داخلي وديكور", "Interior Design") },
+    { key: "Urban", label: t("تخطيط عمراني", "Urban Master Planning") },
+    { key: "Sustainable", label: t("مباني خضراء ومستدامة", "Sustainable Green Buildings") }
   ];
 
   const filteredProjects = projectsData.filter((project) => {
     const matchesCategory =
       selectedCategory === "All" || project.category === selectedCategory;
+
+    const query = searchQuery.toLowerCase().trim();
     const matchesSearch =
-      project.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      project.titleAr.includes(searchQuery) ||
-      project.location.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      project.client.toLowerCase().includes(searchQuery.toLowerCase());
+      query === "" ||
+      project.title.toLowerCase().includes(query) ||
+      project.titleAr.includes(query) ||
+      project.location.toLowerCase().includes(query) ||
+      project.client.toLowerCase().includes(query);
+
     return matchesCategory && matchesSearch;
   });
 
@@ -38,11 +42,11 @@ const Projects = () => {
         <div className="container px-4 px-lg-5 py-5 position-relative" style={{ zIndex: 2 }}>
           <div className="row justify-content-center text-center">
             <div className="col-lg-8">
-              <span className="section-badge mb-3">{t("معرض الأعمال", "PORTFOLIO")}</span>
+              <span className="section-badge mb-3">{t("معرض الأعمال", "OUR PORTFOLIO")}</span>
               <h1 className="display-4 fw-extrabold text-white mb-3">
-                {t("مشاريعنا الهندسية والمعمارية المتميزة", "Our Featured Architectural & Engineering Portfolio")}
+                {t("سجل حافل بالمشاريع الهندسية والمعمارية المتميزة", "A Proven Track Record of Engineering Excellence")}
               </h1>
-              <p className="fs-5 text-slate-300 mb-0" style={{ color:"white", lineHeight: "1.8" }}>
+              <p className="fs-5 text-slate-300 mb-0" style={{ color: "white", lineHeight: "1.8" }}>
                 {t(
                   "تصفح نماذج من المشاريع المعمارية والإنشائية والتخطيطية التي قمنا بإعداد تصاميمها والإشراف عليها.",
                   "Explore real case studies of architectural designs, structural calculations, and master plans delivered by Atlas."
@@ -127,8 +131,7 @@ const Projects = () => {
                     </div>
 
                     <div className="atlas-card-body">
-                      <h5 className="fw-bold mb-1 text-slate-900">{isRtl ? project.titleAr : project.title}</h5>
-                      <p className="text-muted small mb-3">{isRtl ? project.title : project.titleAr}</p>
+                      <h5 className="fw-bold mb-2 text-slate-900">{isRtl ? project.titleAr : project.title}</h5>
                       
                       <p className="text-muted small mb-4 flex-grow-1" style={{ lineHeight: "1.6" }}>
                         {project.summary}
@@ -139,19 +142,24 @@ const Projects = () => {
                           <FiMapPin className="text-gold flex-shrink-0" />
                           <span>{project.location}</span>
                         </div>
-                        <div className="d-flex align-items-center gap-2">
-                          <FiCalendar className="text-gold flex-shrink-0" />
-                          <span>{t("سنة التنفيذ:", "Year:")} {project.year}</span>
+                        <div className="d-flex align-items-center justify-content-between">
+                          <span className="d-flex align-items-center gap-2">
+                            <FiCalendar className="text-gold flex-shrink-0" />
+                            <span>{t(`عام ${project.year}`, `Year ${project.year}`)}</span>
+                          </span>
+                          <span className="d-flex align-items-center gap-2">
+                            <FiLayers className="text-gold flex-shrink-0" />
+                            <span>{project.area}</span>
+                          </span>
                         </div>
                       </div>
 
                       <button
-                        className="btn-atlas-primary w-100 justify-content-center text-uppercase"
-                        style={{ fontSize: "13px" }}
-                        onClick={() => setActiveProject(project)}
+                        onClick={() => setActiveModalProject(project)}
+                        className="btn-atlas-primary w-100 justify-content-center mt-2"
                       >
-                        {t("عرض تفاصيل المشروع كاملة", "View Full Project Details")}
-                        <FiMaximize2 size={14} />
+                        {t("عرض كافة تفاصيل المشروع", "View Project Details")}
+                        <FiArrowUpRight size={18} />
                       </button>
                     </div>
                   </div>
@@ -162,8 +170,11 @@ const Projects = () => {
         </div>
       </section>
 
-      {/* Detail Modal Popup */}
-      <ProjectModal project={activeProject} onClose={() => setActiveProject(null)} />
+      {/* Modal Popup Component */}
+      <ProjectModal
+        project={activeModalProject}
+        onClose={() => setActiveModalProject(null)}
+      />
     </div>
   );
 };

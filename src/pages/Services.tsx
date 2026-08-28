@@ -70,7 +70,7 @@ const Services = () => {
               <h1 className="display-4 fw-extrabold text-white mb-3">
                 {t("منظومة خدمات استشارية متكاملة لجميع أنواع المشاريع", "Integrated Engineering & Architectural Consultancy")}
               </h1>
-              <p className="fs-5 text-slate-300 mb-0" style={{ color:"white",lineHeight: "1.8" }}>
+              <p className="fs-5 text-slate-300 mb-0" style={{color:"white", lineHeight: "1.8" }}>
                 {t(
                   "نقدم حلولاً هندسية مبتكرة ومصممة خصيصاً لتلبية احتياجات الأفراد والمؤسسات والجهات الاستثمارية.",
                   "We provide tailored engineering solutions for commercial developers, private residential owners, and public institutions."
@@ -103,18 +103,19 @@ const Services = () => {
                     </div>
                     <div>
                       <span className="badge bg-slate-100 text-primary fw-bold px-3 py-1 mb-1">
-                        {service.category}
+                        {isRtl ? service.categoryAr : service.category}
                       </span>
                       <h4 className="fw-bold mb-0 text-slate-900">{isRtl ? service.titleAr : service.title}</h4>
-                      <small className="text-muted">{isRtl ? service.title : service.titleAr}</small>
                     </div>
                   </div>
 
-                  <p className="text-muted leading-relaxed mb-4">{service.fullDescription}</p>
+                  <p className="text-muted leading-relaxed mb-4">
+                    {isRtl ? service.fullDescriptionAr : service.fullDescription}
+                  </p>
 
                   <h6 className="fw-bold mb-3 text-slate-900">{t("أبرز مزايا الخدمة:", "Key Service Benefits:")}</h6>
                   <div className="row g-2 mb-4">
-                    {service.benefits.map((benefit, bIdx) => (
+                    {(isRtl ? service.benefitsAr : service.benefits).map((benefit, bIdx) => (
                       <div key={bIdx} className="col-sm-6">
                         <div className="d-flex align-items-start gap-2 small text-muted">
                           <FiCheckCircle className="text-success mt-1 flex-shrink-0" />

@@ -109,44 +109,46 @@ const Home = () => {
                   </div>
                 </div>
 
-                <div className="p-3 rounded-3 bg-slate-900 text-center border border-slate-800">
-                  <span className="text-slate-400 small d-block mb-1">
-                    {t("نسبة الالتزام بالجدول الزمني والميزانية", "On-time & On-budget Guarantee")}
-                  </span>
-                  <span className="fs-3 fw-bold text-gold">100% Guaranteed</span>
+                <div className="pt-3 border-top border-slate-700 d-flex align-items-center justify-content-between text-white-50 small">
+                  <span>{t("خبرة أكثر من 18 عاماً", "18+ Years Experience")}</span>
+                  <span>{t("غزة • فلسطين ومصر", "Palestine & Egypt")}</span>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
 
-      {/* Stats Counter Section */}
-      <section className="bg-dark-slate py-4 border-top border-bottom border-slate-800">
-        <div className="container px-4 px-lg-5">
-          <div className="row g-4 text-center">
-            <div className="col-6 col-md-3">
+          {/* Stats Bar */}
+          <div className="row g-4 mt-5 pt-4 border-top border-slate-800">
+            <div className="col-md-3 col-6">
               <div className="stat-box">
                 <div className="stat-number">+150</div>
-                <div className="stat-label">{t("مشروع منجز", "Projects Completed")}</div>
+                <div className="text-slate-400 small mt-1 text-white">
+                  {t("مشروعاً هندسياً منجزاً", "Completed Projects")}
+                </div>
               </div>
             </div>
-            <div className="col-6 col-md-3">
+            <div className="col-md-3 col-6">
               <div className="stat-box">
                 <div className="stat-number">18+</div>
-                <div className="stat-label">{t("عام خبرة", "Years Experience")}</div>
+                <div className="text-slate-400 small mt-1 text-white">
+                  {t("عاماً من الخبرة والتميّز", "Years of Excellence")}
+                </div>
               </div>
             </div>
-            <div className="col-6 col-md-3">
-              <div className="stat-box">
-                <div className="stat-number">45+</div>
-                <div className="stat-label">{t("مهندس وخبير", "Engineers & Experts")}</div>
-              </div>
-            </div>
-            <div className="col-6 col-md-3">
+            <div className="col-md-3 col-6">
               <div className="stat-box">
                 <div className="stat-number">100%</div>
-                <div className="stat-label">{t("رضا العملاء", "Client Satisfaction")}</div>
+                <div className="text-slate-400 small mt-1 text-white">
+                  {t("مطابقة للكودات والاعتمادات", "Municipal Code Compliance")}
+                </div>
+              </div>
+            </div>
+            <div className="col-md-3 col-6">
+              <div className="stat-box">
+                <div className="stat-number">11</div>
+                <div className="text-slate-400 small mt-1 text-white">
+                  {t("مهندساً واستشارياً متفوقاً", "Senior Consultants")}
+                </div>
               </div>
             </div>
           </div>
@@ -171,18 +173,15 @@ const Home = () => {
                 <div className="atlas-card p-4">
                   <div className="d-flex align-items-center justify-content-between mb-3">
                     <span className="badge bg-slate-100 text-primary fw-bold px-3 py-2">
-                      {service.category}
+                      {isRtl ? service.categoryAr : service.category}
                     </span>
                     <FiLayers className="text-gold" size={24} />
                   </div>
-                  <h4 className="fw-bold mb-2 text-slate-900">
+                  <h4 className="fw-bold mb-3 text-slate-900">
                     {isRtl ? service.titleAr : service.title}
                   </h4>
-                  <h6 className="text-muted mb-3" style={{ fontSize: "14px" }}>
-                    {isRtl ? service.title : service.titleAr}
-                  </h6>
                   <p className="text-muted small mb-4" style={{ lineHeight: "1.7" }}>
-                    {service.shortDescription}
+                    {isRtl ? service.shortDescriptionAr : service.shortDescription}
                   </p>
                   <div className="mt-auto">
                     <Link to="/services" className="text-primary fw-bold small d-inline-flex align-items-center gap-2">
@@ -209,7 +208,7 @@ const Home = () => {
         <div className="container px-4 px-lg-5">
           <SectionTitle
             badge={t("أبرز الأعمال الواقعية", "FEATURED REAL PROJECTS")}
-            title={t("مشاريع معمارية وإشعاعات إنجاز واقعية", "Landmarks of Architectural Excellence")}
+            title={t("مشاريع معمارية وإنجازات واقعية", "Landmarks of Architectural Excellence")}
             subtitle={t(
               "استكشف نماذج حية ومصورة من مشاريعنا المكتملة والقائمة في مختلف المجالات المعمارية والإنشائية والتصميم الداخلي.",
               "Explore real photographic portfolios of our completed architectural, structural, and interior achievements."
@@ -233,13 +232,12 @@ const Home = () => {
                     <span className="atlas-card-badge">{isRtl ? project.categoryAr : project.category}</span>
                   </div>
                   <div className="atlas-card-body">
-                    <h5 className="fw-bold mb-1 text-slate-900">{isRtl ? project.titleAr : project.title}</h5>
-                    <p className="text-muted small mb-3">{isRtl ? project.title : project.titleAr}</p>
+                    <h5 className="fw-bold mb-2 text-slate-900">{isRtl ? project.titleAr : project.title}</h5>
                     <p className="text-muted small mb-4 flex-grow-1" style={{ lineHeight: "1.6" }}>
-                      {project.summary}
+                      {isRtl ? project.summaryAr : project.summary}
                     </p>
                     <div className="pt-3 border-top d-flex align-items-center justify-content-between">
-                      <span className="small text-muted">{project.location}</span>
+                      <span className="small text-muted">{isRtl ? project.locationAr : project.location}</span>
                       <button
                         className="btn btn-sm btn-outline-primary rounded-pill px-3 d-inline-flex align-items-center gap-1"
                         onClick={() => setSelectedProject(project)}
@@ -263,26 +261,19 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Clients & Partners Showcase Section */}
-      <section className="section-padding bg-slate-50 border-top border-bottom">
-        <div className="container px-4 px-lg-5">
-          <SectionTitle 
-            badge={t("عملاؤنا وشركاؤنا", "OUR CLIENTS & PARTNERS")}
-            title={t("ثقة المؤسسات والجهات الكبرى", "Trusted by Leading Institutions & Clients")}
-            subtitle={t(
-              "نفخر بالشراكة والتعامل مع نخبة من المؤسسات الحكومية، الجمعيات، والشركات الاستثمارية في تنفيذ المشاريع الهندسية.",
-              "We take pride in building long-standing relationships with premier organizations, agencies, and private developers."
-            )}
-          />
-
+      {/* Real Clients & Partners Grid */}
+      <section className="py-5 bg-light-slate border-top border-bottom">
+        <div className="container px-4 px-lg-5 text-center">
+          <span className="section-badge mb-2">{t("عملاؤنا وشركاؤنا", "OUR CLIENTS & PARTNERS")}</span>
+          <h3 className="fw-bold text-slate-900 mb-4">{t("مؤسسات وشركاء وثقوا بحلول أطلس الهندسية", "Institutions & Partners Who Trust Atlas Engineering")}</h3>
           <div className="row g-4 align-items-center justify-content-center">
             {clientLogos.map((client, idx) => (
-              <div key={idx} className="col-4 col-md-3 col-lg-2">
-                <div className="p-3 bg-white rounded-3 border text-center shadow-sm hover-lift d-flex align-items-center justify-content-center" style={{ height: "100px" }}>
+              <div key={idx} className="col-lg-2 col-md-3 col-4">
+                <div className="p-3 bg-white rounded-3 border shadow-xs d-flex align-items-center justify-content-center hover-lift" style={{ height: "90px" }}>
                   <img
                     src={client.logo}
                     alt={client.name}
-                    style={{ maxHeight: "64px", maxWidth: "100%", objectFit: "contain" }}
+                    style={{ maxHeight: "55px", maxWidth: "100%", objectFit: "contain" }}
                     onError={(e) => {
                       (e.target as HTMLElement).style.display = 'none';
                     }}
@@ -295,59 +286,59 @@ const Home = () => {
       </section>
 
       {/* Why Choose Atlas Section */}
-      <section className="section-padding bg-dark-slate">
-        <div className="container px-4 px-lg-5">
+      <section className="section-padding bg-dark-slate position-relative overflow-hidden">
+        <div className="hero-overlay-grid"></div>
+        <div className="container px-4 px-lg-5 position-relative" style={{ zIndex: 2 }}>
           <SectionTitle
-            dark
-            badge={t("لماذا نحن", "WHY ATLAS FIRM")}
-            title={t("معايير هندسية عالمية تضمن النجاح", "Global Engineering Standards Guaranteeing Success")}
+            badge={t("لماذا تختار أطلس؟", "WHY CHOOSE ATLAS?")}
+            title={t("معايير هندسية صارمة وتصاميم معمارية مبدعة", "Strict Engineering Rigor & Creative Design")}
             subtitle={t(
-              "نلتزم بتقديم أعلى مستويات الدقة والابتكار المعماري لضمان سلامة واستدامة استثمارات عملائنا.",
-              "We adhere to uncompromising engineering rigor ensuring safety, aesthetics, and optimal investment returns."
+              "نلتزم بتقديم حلول متكاملة تضمن أعلى عائد استثماري، متانة إنشائية، وكفاءة تشغيلية مستدامة.",
+              "We are committed to delivering turnkey engineering solutions that optimize budget, structural longevity, and operational efficiency."
             )}
           />
 
           <div className="row g-4">
             <div className="col-md-4">
-              <div className="dark-glass-panel p-4 h-100 rounded-3">
-                <div className="text-gold mb-3">
-                  <FiShield size={36} />
+              <div className="p-4 bg-slate-900 rounded-4 border border-slate-800 h-100">
+                <div className="bg-gold p-3 rounded-3 text-white d-inline-block mb-3">
+                  <FiShield size={28} />
                 </div>
-                <h5 className="text-white fw-bold mb-2">{t("سلامة إنشائية صارمة", "Structural Rigor")}</h5>
-                <p className="text-slate-400 small" style={{ lineHeight: "1.7" }}>
+                <h4 className="fw-bold text-white mb-2">{t("أمان ونمذجة إنشائية دقيقة", "Structural Precision & Safety")}</h4>
+                <p className="text-slate-400 small mb-0" style={{ lineHeight: "1.7" }}>
                   {t(
-                    "إجراء كافة المحاكاة والتحليلات الإنشائية المتقدمة للتعامل مع الأحمال الديناميكية والظروف المناخية بدقة عالية.",
-                    "Advanced FEA stress modeling and dynamic load simulations guaranteeing structural resilience."
+                    "استخدام أحدث برامج التحليل الإنشائي ثلاثي الأبعاد لاختبار الأحمال والزلازل وضمان السلامة الكلية.",
+                    "Leveraging 3D finite element structural analysis to simulate seismic loads and structural resilience."
                   )}
                 </p>
               </div>
             </div>
 
             <div className="col-md-4">
-              <div className="dark-glass-panel p-4 h-100 rounded-3">
-                <div className="text-gold mb-3">
-                  <FiTrendingUp size={36} />
+              <div className="p-4 bg-slate-900 rounded-4 border border-slate-800 h-100">
+                <div className="bg-gold p-3 rounded-3 text-white d-inline-block mb-3">
+                  <FiAward size={28} />
                 </div>
-                <h5 className="text-white fw-bold mb-2">{t("تقنيات BIM الحديثة", "Modern BIM Workflows")}</h5>
-                <p className="text-slate-400 small" style={{ lineHeight: "1.7" }}>
+                <h4 className="fw-bold text-white mb-2">{t("اعتمادات وتراخيص 100%", "100% Municipal Approvals")}</h4>
+                <p className="text-slate-400 small mb-0" style={{ lineHeight: "1.7" }}>
                   {t(
-                    "استخدام أحدث برامج نمذجة معلومات المباني لتقليل التكاليف وتجنب التعارضات قبل بدء التنفيذ الميداني.",
-                    "Integrating 3D BIM clash-detection to eliminate field errors and control construction budgets."
+                    "مخططاتنا الهندسية مصممة لتكون متوافقة تماماً مع الكودات المحلية واشتراطات البلديات والدفاع المدني.",
+                    "All our architectural and structural blueprints strictly comply with local building regulations and municipal permits."
                   )}
                 </p>
               </div>
             </div>
 
             <div className="col-md-4">
-              <div className="dark-glass-panel p-4 h-100 rounded-3">
-                <div className="text-gold mb-3">
-                  <FiAward size={36} />
+              <div className="p-4 bg-slate-900 rounded-4 border border-slate-800 h-100">
+                <div className="bg-gold p-3 rounded-3 text-white d-inline-block mb-3">
+                  <FiTrendingUp size={28} />
                 </div>
-                <h5 className="text-white fw-bold mb-2">{t("إدارة جودة معتمدة", "Certified Quality Control")}</h5>
-                <p className="text-slate-400 small" style={{ lineHeight: "1.7" }}>
+                <h4 className="fw-bold text-white mb-2">{t("ترشيد التكاليف والإشراف", "Cost Control & Supervision")}</h4>
+                <p className="text-slate-400 small mb-0" style={{ lineHeight: "1.7" }}>
                   {t(
-                    "فريق هندسي متخصص يراقب جودة المواد والتنفيذ خطوة بخطوة لضمان تسليم المشاريع حسب أعلى المواصفات القياسية.",
-                    "Dedicated quality management auditors overseeing on-site material testing and code compliance."
+                    "متابعة ميدانية دقيقة تضمن عدم هدر المواد، والالتزام الصارم بالجدول الزمني المعتمد للمشروع.",
+                    "On-site quality audits ensuring zero material waste, budget optimization, and on-time delivery."
                   )}
                 </p>
               </div>
@@ -356,27 +347,25 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Call to Action Banner */}
-      <section className="py-5 bg-gold text-white">
+      {/* CTA Section */}
+      <section className="py-5 bg-gold text-white text-center">
         <div className="container px-4 px-lg-5">
-          <div className="d-flex flex-column flex-lg-row align-items-center justify-content-between gap-4 text-center text-lg-start">
-            <div>
-              <h3 className="fw-bold mb-2 text-white">
-                {t("هل لديك مشروع هندسي ترغب في مناقشته؟", "Have an engineering project to discuss?")}
-              </h3>
-              <p className="mb-0 text-white-50 fs-5">
-                {t("فريقنا الهندسي جاهز لتقديم الاستشارة والتخطيط الأمثل لمشروعك.", "Our engineering team is ready to consult and plan your next landmark.")}
-              </p>
-            </div>
-            <Link to="/contact" className="btn btn-dark btn-lg px-5 py-3 rounded-3 text-uppercase fw-bold flex-shrink-0" style={{ backgroundColor: '#0f172a' }}>
-              {t("تواصل معنا الآن", "Get In Touch Now")}
-            </Link>
-          </div>
+          <h2 className="fw-extrabold mb-2 text-slate-900">{t("جاهز لبدء مشروعك الهندسي القادم؟", "Ready to Launch Your Next Engineering Project?")}</h2>
+          <p className="fs-5 mb-4 text-slate-900" style={{ opacity: 0.9 }}>
+            {t("تواصل معنا اليوم للحصول على استشارة هندسية أولية وتحديد خطة العمل المناسبة.", "Contact our team today to schedule an initial consultation and receive a project feasibility proposal.")}
+          </p>
+          <Link to="/contact" className="btn btn-dark btn-lg px-4 py-3 rounded-pill fw-bold fs-6">
+            {t("تواصل مع فريق الاستشارات الهندسية", "Contact Engineering Consultants")}
+            <FiArrowUpRight size={20} />
+          </Link>
         </div>
       </section>
 
-      {/* Modal Popup */}
-      <ProjectModal project={selectedProject} onClose={() => setSelectedProject(null)} />
+      {/* Modal Popup Component */}
+      <ProjectModal
+        project={selectedProject}
+        onClose={() => setSelectedProject(null)}
+      />
     </div>
   );
 };

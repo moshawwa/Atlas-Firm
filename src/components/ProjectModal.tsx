@@ -48,7 +48,6 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) => {
               {isRtl ? project.categoryAr : project.category}
             </span>
             <h2 className="text-white fw-bold m-0">{isRtl ? project.titleAr : project.title}</h2>
-            <p className="text-slate-300 fs-5 mb-0">{isRtl ? project.title : project.titleAr}</p>
           </div>
         </div>
 
@@ -66,7 +65,7 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) => {
                     <FiUser className="text-gold flex-shrink-0" />
                     <div>
                       <strong className="d-block">{t("العميل:", "Client:")}</strong>
-                      <span>{project.client}</span>
+                      <span>{isRtl ? project.clientAr : project.client}</span>
                     </div>
                   </div>
 
@@ -74,7 +73,7 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) => {
                     <FiMapPin className="text-gold flex-shrink-0" />
                     <div>
                       <strong className="d-block">{t("الموقع:", "Location:")}</strong>
-                      <span>{project.location}</span>
+                      <span>{isRtl ? project.locationAr : project.location}</span>
                     </div>
                   </div>
 
@@ -90,13 +89,13 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) => {
                     <FiMaximize2 className="text-gold flex-shrink-0" />
                     <div>
                       <strong className="d-block">{t("المساحة الإجمالية:", "Total Area:")}</strong>
-                      <span>{project.area}</span>
+                      <span>{isRtl ? project.areaAr : project.area}</span>
                     </div>
                   </div>
 
                   <div className="pt-2 border-top">
                     <span className="badge bg-primary px-3 py-2 fs-6">
-                      {t("حالة المشروع:", "Status:")} {project.status === "Completed" ? t("مكتمل بالكامل", "Completed") : project.status}
+                      {t("حالة المشروع:", "Status:")} {isRtl ? project.statusAr : project.status}
                     </span>
                   </div>
                 </div>
@@ -106,7 +105,7 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) => {
             {/* Right Column: Description & Key Specs */}
             <div className="col-md-8">
               <h5 className="fw-bold mb-3 text-slate-900">{t("نظرة عامة على المشروع", "Project Overview")}</h5>
-              <p className="text-muted leading-relaxed mb-4">{isRtl ? project.fullDescription : project.fullDescription}</p>
+              <p className="text-muted leading-relaxed mb-4">{isRtl ? project.fullDescriptionAr : project.fullDescription}</p>
 
               <h6 className="fw-bold mb-3 text-slate-900">{t("المواصفات الفنية والإنشائية الرئيسية", "Key Engineering & Technical Specs")}</h6>
               <div className="row g-2">
@@ -115,8 +114,8 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) => {
                     <div className="d-flex align-items-start gap-2 p-2 bg-slate-50 rounded">
                       <FiCheckCircle className="text-success mt-1 flex-shrink-0" />
                       <div>
-                        <strong className="d-block small text-dark">{spec.label}</strong>
-                        <span className="small text-muted">{spec.value}</span>
+                        <strong className="d-block small text-dark">{isRtl ? spec.labelAr : spec.label}</strong>
+                        <span className="small text-muted">{isRtl ? spec.valueAr : spec.value}</span>
                       </div>
                     </div>
                   </div>

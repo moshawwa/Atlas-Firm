@@ -7,13 +7,16 @@ export interface TeamMember {
   degree: string;
   degreeAr: string;
   specialization: string;
+  specializationAr: string;
   bio: string;
+  bioAr: string;
   experienceYears: number;
   email: string;
   linkedin: string;
   image: string;
   projectsLed: number;
   featuredQuote: string;
+  featuredQuoteAr: string;
 }
 
 export const teamData: TeamMember[] = [
@@ -26,13 +29,16 @@ export const teamData: TeamMember[] = [
     degree: "Bch. Architecture",
     degreeAr: "بكالوريوس هندسة معمارية",
     specialization: "Architectural Engineering & Firm Management",
-    bio: "المدير العام ورئيس قسم الهندسة المعمارية بخبرة 16 عاماً في قيادة التصاميم المعمارية والتخطيط الاستراتيجي للمشاريع.",
+    specializationAr: "الهندسة المعمارية وإدارة الشركة",
+    bio: "General Manager and Head of Architecture Department with 16 years of experience in architectural design and strategic project master planning.",
+    bioAr: "المدير العام ورئيس قسم الهندسة المعمارية بخبرة 16 عاماً في قيادة التصاميم المعمارية والتخطيط الاستراتيجي للمشاريع.",
     experienceYears: 16,
     email: "atlas.engineers20@gmail.com",
     linkedin: "https://linkedin.com",
     image: "/images/gm photo.jpg",
     projectsLed: 65,
-    featuredQuote: "القيادة المعمارية الحقيقية تكمن في الجمع بين الرؤية الإبداعية والإتقان الهندسي."
+    featuredQuote: "True architectural leadership merges creative vision with structural mastery.",
+    featuredQuoteAr: "القيادة المعمارية الحقيقية تكمن في الجمع بين الرؤية الإبداعية والإتقان الهندسي."
   },
   {
     id: "mohammed-altabbaa",
@@ -43,13 +49,16 @@ export const teamData: TeamMember[] = [
     degree: "Bch. Civil Engineer",
     degreeAr: "بكالوريوس هندسة مدنية",
     specialization: "Civil & Structural Engineering",
-    bio: "رئيس قسم الهندسة المدنية بخبرة 14 عاماً في الإشراف على الدراسات الإنشائية والتنفيذ الميداني للمباني الكبرى.",
+    specializationAr: "الهندسة المدنية والإنشائية",
+    bio: "Head of Civil Engineering Department with 14 years of experience overseeing structural studies and site execution for major developments.",
+    bioAr: "رئيس قسم الهندسة المدنية بخبرة 14 عاماً في الإشراف على الدراسات الإنشائية والتنفيذ الميداني للمباني الكبرى.",
     experienceYears: 14,
     email: "atlas.engineers20@gmail.com",
     linkedin: "https://linkedin.com",
     image: "/images/user-avatar.png",
     projectsLed: 50,
-    featuredQuote: "السلامة المتكاملة والدقة الإنشائية هما الركيزة الأساسية لاستدامة المباني."
+    featuredQuote: "Integrated safety and structural precision are the cornerstone of sustainable buildings.",
+    featuredQuoteAr: "السلامة المتكاملة والدقة الإنشائية هما الركيزة الأساسية لاستدامة المباني."
   },
   {
     id: "samy-abu-hashem",
@@ -60,13 +69,16 @@ export const teamData: TeamMember[] = [
     degree: "Bch. Civil Engineer",
     degreeAr: "بكالوريوس هندسة مدنية",
     specialization: "Structural Calculations & FEA Analysis",
-    bio: "مهندس إنشائي بخبرة 9 أعوام في تصميم الحسابات الهندسية ومحاكاة أحمال المباني والأساسات الخرسانية.",
+    specializationAr: "الحسابات الإنشائية وتحليل FEA",
+    bio: "Structural Engineer with 9 years of experience in structural FEA stress calculations, building load simulations, and foundation design.",
+    bioAr: "مهندس إنشائي بخبرة 9 أعوام في تصميم الحسابات الهندسية ومحاكاة أحمال المباني والأساسات الخرسانية.",
     experienceYears: 9,
     email: "atlas.engineers20@gmail.com",
     linkedin: "https://linkedin.com",
     image: "/images/user-avatar.png",
     projectsLed: 38,
-    featuredQuote: "الدراسة الإنشائية الدقيقة تضمن أعلى مستويات الأمان والجودة الميدانية."
+    featuredQuote: "Rigorous structural auditing guarantees top-tier safety and site quality.",
+    featuredQuoteAr: "الدراسة الإنشائية الدقيقة تضمن أعلى مستويات الأمان والجودة الميدانية."
   },
   {
     id: "basma-abu-hatab",
@@ -77,13 +89,16 @@ export const teamData: TeamMember[] = [
     degree: "Bch. Electrical Engineer",
     degreeAr: "بكالوريوس هندسة كهربائية",
     specialization: "Electrical & Power Systems",
-    bio: "رئيسة قسم الهندسة الكهربائية بخبرة 11 عاماً في تصميم شبكات الطاقة والأنظمة الكهربائية الذكية وتوزيع الإضاءة.",
+    specializationAr: "الأنظمة الكهربائية وشبكات الطاقة",
+    bio: "Head of Electrical Engineering Department with 11 years of experience in power distribution, smart automation grids, and architectural lighting design.",
+    bioAr: "رئيسة قسم الهندسة الكهربائية بخبرة 11 عاماً في تصميم شبكات الطاقة والأنظمة الكهربائية الذكية وتوزيع الإضاءة.",
     experienceYears: 11,
     email: "atlas.engineers20@gmail.com",
     linkedin: "https://linkedin.com",
     image: "/images/user-avatar.png",
     projectsLed: 45,
-    featuredQuote: "الحلول الكهربائية الذكية تمنح المباني كفاءة عالية وترشيداً مستداماً للطاقة."
+    featuredQuote: "Smart electrical engineering gives buildings high efficiency and sustainable energy optimization.",
+    featuredQuoteAr: "الحلول الكهربائية الذكية تمنح المباني كفاءة عالية وترشيداً مستداماً للطاقة."
   },
   {
     id: "thaer-aldeeb",
@@ -94,13 +109,16 @@ export const teamData: TeamMember[] = [
     degree: "Bch. Electrical Engineer",
     degreeAr: "بكالوريوس هندسة كهربائية",
     specialization: "Building Systems & Automation",
-    bio: "مهندس كهربائي بخبرة 7 أعوام في إعداد المخططات الكهربائية والتمديدات والإشراف التنفيذي في المواقع.",
+    specializationAr: "أنظمة المباني والأتمتة",
+    bio: "Electrical Engineer with 7 years of experience in drafting electrical schematics, power wiring, and on-site engineering inspection.",
+    bioAr: "مهندس كهربائي بخبرة 7 أعوام في إعداد المخططات الكهربائية والتمديدات والإشراف التنفيذي في المواقع.",
     experienceYears: 7,
     email: "atlas.engineers20@gmail.com",
     linkedin: "https://linkedin.com",
     image: "/images/user-avatar.png",
     projectsLed: 28,
-    featuredQuote: "التكامل بين الدوائر الكهربائية والسلامة الميدانية يضمن أداء متوافقاً مع أعلى الكودات."
+    featuredQuote: "Seamless integration between electrical circuits and site safety ensures top code performance.",
+    featuredQuoteAr: "التكامل بين الدوائر الكهربائية والسلامة الميدانية يضمن أداء متوافقاً مع أعلى الكودات."
   },
   {
     id: "bahaa-aljadba",
@@ -111,13 +129,16 @@ export const teamData: TeamMember[] = [
     degree: "Bch. Mechatronics Engineer",
     degreeAr: "بكالوريوس هندسة ميكاترونكس",
     specialization: "HVAC & Mechanical Engineering",
-    bio: "رئيس قسم الهندسة الميكانيكية بخبرة 12 عاماً في تصميم أنظمة التكييف والتغذية والهيدروليك والأنظمة الذكية.",
+    specializationAr: "التكييف والأنظمة الميكانيكية",
+    bio: "Head of Mechanical Engineering Department with 12 years of experience designing HVAC systems, plumbing networks, hydraulics, and smart building systems.",
+    bioAr: "رئيس قسم الهندسة الميكانيكية بخبرة 12 عاماً في تصميم أنظمة التكييف والتغذية والهيدروليك والأنظمة الذكية.",
     experienceYears: 12,
     email: "atlas.engineers20@gmail.com",
     linkedin: "https://linkedin.com",
     image: "/images/user-avatar.png",
     projectsLed: 40,
-    featuredQuote: "الأنظمة الميكانيكية المتقدمة توفر بيئة داخلية صحية ومريحة لجميع المباني."
+    featuredQuote: "Advanced mechanical engineering delivers comfortable, healthy indoor environments for all facilities.",
+    featuredQuoteAr: "الأنظمة الميكانيكية المتقدمة توفر بيئة داخلية صحية ومريحة لجميع المباني."
   },
   {
     id: "aliaa-abushaban",
@@ -128,13 +149,16 @@ export const teamData: TeamMember[] = [
     degree: "Bch. Industrial Engineer",
     degreeAr: "بكالوريوس هندسة صناعية",
     specialization: "Industrial & Mechanical Systems",
-    bio: "مهندسة ميكانيكية وصناعية بخبرة 5 أعوام في تخطيط وتحسين الكفاءة التشغيلية والأنظمة الميكانيكية.",
+    specializationAr: "الأنظمة الصناعية والميكانيكية",
+    bio: "Mechanical and Industrial Engineer with 5 years of experience in operational optimization, fluid dynamics, and mechanical systems planning.",
+    bioAr: "مهندسة ميكانيكية وصناعية بخبرة 5 أعوام في تخطيط وتحسين الكفاءة التشغيلية والأنظمة الميكانيكية.",
     experienceYears: 5,
     email: "atlas.engineers20@gmail.com",
     linkedin: "https://linkedin.com",
     image: "/images/user-avatar.png",
     projectsLed: 22,
-    featuredQuote: "التفكير الصناعي والهندسي يضمن سلاسة التشغيل وتقليل الهدر في المشاريع."
+    featuredQuote: "Industrial engineering thinking ensures smooth operations and zero waste across engineering projects.",
+    featuredQuoteAr: "التفكير الصناعي والهندسي يضمن سلاسة التشغيل وتقليل الهدر في المشاريع."
   },
   {
     id: "nesma-al-khozondar",
@@ -145,13 +169,16 @@ export const teamData: TeamMember[] = [
     degree: "Bch. Architecture",
     degreeAr: "بكالوريوس هندسة معمارية",
     specialization: "Architectural Rendering & BIM",
-    bio: "مهندسة معمارية بخبرة 3 أعوام في تطوير المخططات التنفيذية والنمذجة ثلاثية الأبعاد والرندر المعماري.",
+    specializationAr: "الرندر المعماري ونمذجة BIM",
+    bio: "Architect with 3 years of experience in drafting working drawings, 3D modeling, photorealistic rendering, and spatial planning.",
+    bioAr: "مهندسة معمارية بخبرة 3 أعوام في تطوير المخططات التنفيذية والنمذجة ثلاثية الأبعاد والرندر المعماري.",
     experienceYears: 3,
     email: "atlas.engineers20@gmail.com",
     linkedin: "https://linkedin.com",
     image: "/images/user-avatar.png",
     projectsLed: 18,
-    featuredQuote: "التفاصيل المعمارية الدقيقة تمنح المساحات تميزاً وجمالاً فريداً."
+    featuredQuote: "Meticulous architectural detailing brings unique beauty and character to spaces.",
+    featuredQuoteAr: "التفاصيل المعمارية الدقيقة تمنح المساحات تميزاً وجمالاً فريداً."
   },
   {
     id: "rawan-mustafa",
@@ -162,30 +189,36 @@ export const teamData: TeamMember[] = [
     degree: "Bch. Architecture",
     degreeAr: "بكالوريوس هندسة معمارية",
     specialization: "Spatial Design & Drafts",
-    bio: "مهندسة معمارية بخبرة عام في إعداد الواجهات والمساقط المعمارية والتصميم الفراغي الحديث.",
+    specializationAr: "التصميم الفراغي والمساقط",
+    bio: "Architect with 1 year of experience drafting architectural facades, floor plan layouts, and modern interior spatial concepts.",
+    bioAr: "مهندسة معمارية بخبرة عام في إعداد الواجهات والمساقط المعمارية والتصميم الفراغي الحديث.",
     experienceYears: 1,
     email: "atlas.engineers20@gmail.com",
     linkedin: "https://linkedin.com",
     image: "/images/user-avatar.png",
     projectsLed: 10,
-    featuredQuote: "الشغف المعماري هو المحرك الأول لتقديم فضاءات معاصرة تلبي احتياجات العملاء."
+    featuredQuote: "Architectural passion is the driving force behind creating contemporary spaces that meet client needs.",
+    featuredQuoteAr: "الشغف المعماري هو المحرك الأول لتقديم فضاءات معاصرة تلبي احتياجات العملاء."
   },
   {
     id: "mohammed-khalaf",
     name: "Mohammed Khalaf",
     nameAr: "أ. محمد خلف",
-    role: "Accountant",
+    role: "Accountant & Chief Financial Officer",
     roleAr: "محاسب عام والمدير المالي",
     degree: "Bch. Accountant",
     degreeAr: "بكالوريوس محاسبة",
     specialization: "Financial Management & Budgets",
-    bio: "محاسب عام بخبرة 14 عاماً في التخطيط المالي وتدقيق العقود والتكاليف والهندسة المالية للمشاريع.",
+    specializationAr: "الإدارة المالية والميزانيات",
+    bio: "General Accountant with 14 years of experience in financial planning, contract auditing, project cost control, and financial engineering.",
+    bioAr: "محاسب عام بخبرة 14 عاماً في التخطيط المالي وتدقيق العقود والتكاليف والهندسة المالية للمشاريع.",
     experienceYears: 14,
     email: "atlas.engineers20@gmail.com",
     linkedin: "https://linkedin.com",
     image: "/images/user-avatar.png",
     projectsLed: 60,
-    featuredQuote: "الرقابة المالية الشفافة تضمن استقرار المشاريع وتسليمها ضمن الميزانيات المحددة."
+    featuredQuote: "Transparent financial control ensures project stability and delivery strictly within budget.",
+    featuredQuoteAr: "الرقابة المالية الشفافة تضمن استقرار المشاريع وتسليمها ضمن الميزانيات المحددة."
   },
   {
     id: "aya-sakallah",
@@ -196,12 +229,15 @@ export const teamData: TeamMember[] = [
     degree: "Diploma of IT",
     degreeAr: "دبلوم تكنولوجيا المعلومات",
     specialization: "IT Infrastructure & Digital Systems",
-    bio: "مسؤولة تكنولوجيا المعلومات بخبرة 5 أعوام في إدارة البنية التحتية البرمجية والأنظمة الرقمية بشركة أطلس.",
+    specializationAr: "البنية التحتية والأنظمة الرقمية",
+    bio: "IT Officer with 5 years of experience managing software infrastructure, digital systems, network security, and engineering IT operations.",
+    bioAr: "مسؤولة تكنولوجيا المعلومات بخبرة 5 أعوام في إدارة البنية التحتية البرمجية والأنظمة الرقمية بشركة أطلس.",
     experienceYears: 5,
     email: "atlas.engineers20@gmail.com",
     linkedin: "https://linkedin.com",
     image: "/images/user-avatar.png",
     projectsLed: 25,
-    featuredQuote: "التحول الرقمي السلس والأنظمة التقنية الآمنة تدعم الإنتاجية الهندسية العالية."
+    featuredQuote: "Smooth digital transformation and secure IT systems empower high engineering productivity.",
+    featuredQuoteAr: "التحول الرقمي السلس والأنظمة التقنية الآمنة تدعم الإنتاجية الهندسية العالية."
   }
 ];

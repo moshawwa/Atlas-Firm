@@ -85,12 +85,12 @@ const Team = () => {
                     </h6>
 
                     <p className="text-muted small mb-3 flex-grow-1" style={{ lineHeight: "1.6" }}>
-                      {member.bio}
+                      {isRtl ? member.bioAr : member.bio}
                     </p>
 
                     <div className="p-3 bg-slate-50 rounded-3 mb-3 border">
                       <small className="text-slate-600 fst-italic d-block">
-                        "{member.featuredQuote}"
+                        "{isRtl ? member.featuredQuoteAr : member.featuredQuote}"
                       </small>
                     </div>
 

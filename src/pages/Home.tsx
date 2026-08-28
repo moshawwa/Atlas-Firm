@@ -56,9 +56,6 @@ const Home = () => {
                   <span className="hero-logo-text d-block">
                     {t("أطلس للاستشارات الهندسية", "Atlas Engineering Consultancy")}
                   </span>
-                  <small className="text-slate-600 text-uppercase fw-bold" style={{ fontSize: "11px", letterSpacing: "1.5px" }}>
-                    {t("فلسطين ومصر", "Palestine & Egypt")}
-                  </small>
                 </div>
               </div>
               <h1 className="display-4 fw-extrabold text-white mb-4 leading-tight">

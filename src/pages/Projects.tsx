@@ -2,12 +2,21 @@ import { useState } from "react";
 import ProjectModal from "../components/ProjectModal";
 import { projectsData, type Project } from "../data/projects";
 import { useLanguage } from "../context/LanguageContext";
-import { FiSearch, FiMapPin, FiCalendar, FiArrowUpRight, FiLayers } from "react-icons/fi";
+import {
+  FiSearch,
+  FiMapPin,
+  FiCalendar,
+  FiArrowUpRight,
+  FiLayers,
+  FiList,
+  FiGrid
+} from "react-icons/fi";
 
 const Projects = () => {
   const { t, isRtl } = useLanguage();
   const [selectedCategory, setSelectedCategory] = useState<string>("All");
   const [searchQuery, setSearchQuery] = useState<string>("");
+  const [viewMode, setViewMode] = useState<"list" | "grid">("list");
   const [activeModalProject, setActiveModalProject] = useState<Project | null>(null);
 
   const categories = [
@@ -57,12 +66,12 @@ const Projects = () => {
         </div>
       </section>
 
-      {/* Filter and Search Bar */}
+      {/* Filter, Search & View Switcher Bar */}
       <section className="py-4 bg-light-slate border-bottom">
         <div className="container px-4 px-lg-5">
           <div className="row g-3 align-items-center justify-content-between">
             {/* Category Tabs */}
-            <div className="col-lg-8">
+            <div className="col-lg-7">
               <div className="d-flex flex-wrap gap-2">
                 {categories.map((cat) => (
                   <button
@@ -76,26 +85,46 @@ const Projects = () => {
               </div>
             </div>
 
-            {/* Search Input */}
-            <div className="col-lg-4">
-              <div className="input-group">
-                <span className="input-group-text bg-white border-end-0">
-                  <FiSearch className="text-muted" />
-                </span>
-                <input
-                  type="text"
-                  className="form-control border-start-0 ps-0"
-                  placeholder={t("بحث عن مشروع، موقع، أو عميل...", "Search by project, location, or client...")}
-                  value={searchQuery}
-                  onChange={(e) => setSearchQuery(e.target.value)}
-                />
+            {/* Search Input & View Toggle */}
+            <div className="col-lg-5">
+              <div className="d-flex align-items-center gap-2">
+                <div className="input-group flex-grow-1">
+                  <span className="input-group-text bg-white border-end-0">
+                    <FiSearch className="text-muted" />
+                  </span>
+                  <input
+                    type="text"
+                    className="form-control border-start-0 ps-0"
+                    placeholder={t("بحث عن مشروع، موقع، أو عميل...", "Search by project, location, or client...")}
+                    value={searchQuery}
+                    onChange={(e) => setSearchQuery(e.target.value)}
+                  />
+                </div>
+
+                {/* View Mode Toggle Buttons */}
+                <div className="btn-group bg-white p-1 rounded border">
+                  <button
+                    onClick={() => setViewMode("list")}
+                    className={`btn btn-sm ${viewMode === "list" ? "btn-primary text-white" : "btn-light text-muted"}`}
+                    title={t("عرض القائمة (List View)", "List View")}
+                  >
+                    <FiList size={18} />
+                  </button>
+                  <button
+                    onClick={() => setViewMode("grid")}
+                    className={`btn btn-sm ${viewMode === "grid" ? "btn-primary text-white" : "btn-light text-muted"}`}
+                    title={t("عرض الشبكة (Grid View)", "Grid View")}
+                  >
+                    <FiGrid size={18} />
+                  </button>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Projects Cards Grid */}
+      {/* Projects Showcase Container */}
       <section className="section-padding projects-section-bg">
         <div className="container px-4 px-lg-5">
           {filteredProjects.length === 0 ? (
@@ -112,7 +141,37 @@ const Projects = () => {
                 {t("إعادة ضبط الفلاتر", "Reset Filters")}
               </button>
             </div>
+          ) : viewMode === "list" ? (
+            /* Architectural Portfolio List View (Matching Uploaded Image) */
+            <div className="project-list-container">
+              {filteredProjects.map((project, idx) => {
+                const formattedNum = String(idx + 1).padStart(2, "0");
+                return (
+                  <div
+                    key={project.id}
+                    className="project-list-row"
+                    onClick={() => setActiveModalProject(project)}
+                  >
+                    <div className="d-flex align-items-center gap-4">
+                      <span className="project-list-num">{formattedNum}</span>
+                      <h3 className="project-list-title">
+                        {isRtl ? project.titleAr : project.title}
+                      </h3>
+                    </div>
+
+                    <div className="d-flex align-items-center gap-4 gap-md-5">
+                      <span className="project-list-category d-none d-md-inline">
+                        {isRtl ? project.categoryAr : project.category}
+                      </span>
+                      <span className="project-list-year">{project.year}</span>
+                      <FiArrowUpRight className="text-gold" size={20} />
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
           ) : (
+            /* Cards Grid View */
             <div className="row g-4">
               {filteredProjects.map((project) => (
                 <div key={project.id} className="col-lg-4 col-md-6">
@@ -134,13 +193,13 @@ const Projects = () => {
                       <h5 className="fw-bold mb-2 text-slate-900">{isRtl ? project.titleAr : project.title}</h5>
                       
                       <p className="text-muted small mb-4 flex-grow-1" style={{ lineHeight: "1.6" }}>
-                        {project.summary}
+                        {isRtl ? project.summaryAr : project.summary}
                       </p>
 
                       <div className="d-flex flex-column gap-2 mb-3 pt-3 border-top small text-muted">
                         <div className="d-flex align-items-center gap-2">
                           <FiMapPin className="text-gold flex-shrink-0" />
-                          <span>{project.location}</span>
+                          <span>{isRtl ? project.locationAr : project.location}</span>
                         </div>
                         <div className="d-flex align-items-center justify-content-between">
                           <span className="d-flex align-items-center gap-2">
@@ -149,7 +208,7 @@ const Projects = () => {
                           </span>
                           <span className="d-flex align-items-center gap-2">
                             <FiLayers className="text-gold flex-shrink-0" />
-                            <span>{project.area}</span>
+                            <span>{isRtl ? project.areaAr : project.area}</span>
                           </span>
                         </div>
                       </div>

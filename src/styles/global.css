@@ -473,19 +473,73 @@ a {
               url("https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1920&q=80") fixed center/cover no-repeat !important;
 }
 
-/* Hero Standalone Logo Card - Wide, Prominent & Crisp */
-.hero-logo-card {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 22px 65px;
-  min-width: 360px;
-  max-width: 100%;
+/* Architectural Portfolio List View (Matching Uploaded Design) */
+.project-list-container {
   background: #ffffff;
-  border: 2.5px solid var(--accent);
-  border-radius: 26px;
-  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.4), 0 0 25px rgba(255, 255, 255, 0.35);
-  transition: var(--transition-normal);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--light-border);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+}
+
+.project-list-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 26px 36px;
+  border-bottom: 1px solid #f1f5f9;
+  background: #ffffff;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  text-decoration: none;
+}
+
+.project-list-row:last-child {
+  border-bottom: none;
+}
+
+.project-list-row:hover {
+  background: #f8fafc;
+  box-shadow: inset 4px 0 0 var(--accent);
+}
+
+html[dir="rtl"] .project-list-row:hover {
+  box-shadow: inset -4px 0 0 var(--accent);
+}
+
+.project-list-num {
+  font-family: 'Outfit', sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--accent);
+  min-width: 50px;
+  flex-shrink: 0;
+}
+
+.project-list-title {
+  font-family: 'Outfit', var(--font-family);
+  font-size: 26px;
+  font-weight: 800;
+  color: var(--dark-bg);
+  margin: 0;
+  transition: color 0.2s ease;
+}
+
+.project-list-row:hover .project-list-title {
+  color: var(--primary);
+}
+
+.project-list-category {
+  color: #64748b;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.project-list-year {
+  color: #94a3b8;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: 'Outfit', sans-serif;
 }
 
 .hero-logo-card:hover {

@@ -29,7 +29,7 @@ export const projectsData: Project[] = [
     title: "Abu Shaban Commercial & Residential Tower",
     titleAr: "مبنى مجمع أبو شعبان التجاري والسكني",
     category: "Architectural",
-    categoryAr: "معماري وانشائي",
+    categoryAr: "معماري وإنشائي",
     client: "Abu Shaban Group",
     clientAr: "مجموعة أبو شعبان",
     year: "2024",
@@ -39,8 +39,8 @@ export const projectsData: Project[] = [
     areaAr: "14,500 متر مربع",
     status: "Completed",
     statusAr: "مكتمل",
-    summary: "Architectural & structural engineering design for a multi-story commercial and residential tower combining space efficiency and modern glass aesthetics.",
-    summaryAr: "تصميم معماري وإنشائي لمبنى تجاري وسكني متعدد الطوابق يجمع بين الحداثة البصرية والاستغلال الأمثل للمساحات.",
+    summary: "Architectural & structural engineering design for a multi-story commercial and residential tower.",
+    summaryAr: "تصميم معماري وإنشائي لمبنى تجاري وسكني متعدد الطوابق يجمع بين الحداثة البصرية واستغلال المساحات.",
     fullDescription: "Abu Shaban Commercial & Residential Complex project is a flagship model integrating contemporary curtain wall facades with sun-shading architectural elements. Atlas engineering team delivered all structural calculations, architectural BIM drawings, and safety code audits.",
     fullDescriptionAr: "مشروع مجمع أبو شعبان التجاري والسكني يُعد نموذجاً رائداً في دمج الواجهات الزجاجية المعاصرة مع العناصر التظليلية المعمارية. قدمت أطلس كافة الدراسات الإنشائية والمعمارية واختبارات السلامة.",
     mainImage: "/images/real-projects/ABU_SHABAN_BUILDING/1.jpg",
@@ -49,7 +49,8 @@ export const projectsData: Project[] = [
       "/images/real-projects/ABU_SHABAN_BUILDING/22.jpg",
       "/images/real-projects/ABU_SHABAN_BUILDING/3.jpg",
       "/images/real-projects/ABU_SHABAN_BUILDING/4.jpg",
-      "/images/real-projects/ABU_SHABAN_BUILDING/5.jpg"
+      "/images/real-projects/ABU_SHABAN_BUILDING/5.jpg",
+      "/images/real-projects/ABU_SHABAN_BUILDING/WhatsApp Image 2023-05-21 at 13.46.38.jpg"
     ],
     keySpecs: [
       { label: "Building Type", labelAr: "نوع المبنى", value: "Multi-story Commercial & Residential Tower", valueAr: "مجمع تجاري وسكني برج متعدد الطوابق" },
@@ -82,7 +83,9 @@ export const projectsData: Project[] = [
     gallery: [
       "/images/real-projects/AlHuda_Hospital/1.jpg",
       "/images/real-projects/AlHuda_Hospital/2.jpg",
-      "/images/real-projects/AlHuda_Hospital/3.jpg"
+      "/images/real-projects/AlHuda_Hospital/3.jpg",
+      "/images/real-projects/AlHuda_Hospital/IMG_20230727_173554.jpg",
+      "/images/real-projects/AlHuda_Hospital/IMG_20230727_173604.jpg"
     ],
     keySpecs: [
       { label: "Medical Bed Capacity", labelAr: "السعة الفندقية الطبية", value: "180 Specialized Beds", valueAr: "180 سرير تخصصي" },
@@ -115,7 +118,8 @@ export const projectsData: Project[] = [
       "/images/real-projects/BANAT_VILLA/1 (1).jpg",
       "/images/real-projects/BANAT_VILLA/1 (2).jpg",
       "/images/real-projects/BANAT_VILLA/1 (3).jpg",
-      "/images/real-projects/BANAT_VILLA/1 (4).jpg"
+      "/images/real-projects/BANAT_VILLA/1 (4).jpg",
+      "/images/real-projects/BANAT_VILLA/1 (5).jpg"
     ],
     keySpecs: [
       { label: "Architectural Style", labelAr: "الطراز المعماري", value: "Modern Luxury Architecture", valueAr: "عمارة مودرن حديثة" },
@@ -147,7 +151,11 @@ export const projectsData: Project[] = [
     gallery: [
       "/images/real-projects/الكنيسة_البيزنطيةمتحف/1 فوتوشب.jpg",
       "/images/real-projects/الكنيسة_البيزنطيةمتحف/2 فوتوشب.jpg",
-      "/images/real-projects/الكنيسة_البيزنطيةمتحف/6.jpg"
+      "/images/real-projects/الكنيسة_البيزنطيةمتحف/6.jpg",
+      "/images/real-projects/الكنيسة_البيزنطيةمتحف/8.jpg",
+      "/images/real-projects/الكنيسة_البيزنطيةمتحف/mod 4.jpg",
+      "/images/real-projects/الكنيسة_البيزنطيةمتحف/mod 6.jpg",
+      "/images/real-projects/الكنيسة_البيزنطيةمتحف/mod 7.jpg"
     ],
     keySpecs: [
       { label: "Project Category", labelAr: "نوع المشروع", value: "Heritage Conservation & Museum", valueAr: "ترميم وتطوير موقع أثري وثقافي" },
@@ -178,7 +186,12 @@ export const projectsData: Project[] = [
     gallery: [
       "/images/real-projects/مطعم_الطيبات_تصميم_واجهة_وتصميم_داخلي/تصميم واجهة لمطعم الطيبات/واجهة مقترح ثالث 02.jpg",
       "/images/real-projects/مطعم_الطيبات_تصميم_واجهة_وتصميم_داخلي/تصميم واجهة لمطعم الطيبات/مقترح ثالث 03.jpg",
-      "/images/real-projects/مطعم_الطيبات_تصميم_واجهة_وتصميم_داخلي/صور تصميم داخلي للطابق الارضي لمطعم الطيبات/صورة 02.jpg"
+      "/images/real-projects/مطعم_الطيبات_تصميم_واجهة_وتصميم_داخلي/صور تصميم داخلي للطابق الارضي لمطعم الطيبات/صورة 02.jpg",
+      "/images/real-projects/مطعم_الطيبات_تصميم_واجهة_وتصميم_داخلي/صور تصميم داخلي للطابق الارضي لمطعم الطيبات/صورة 04.jpg",
+      "/images/real-projects/مطعم_الطيبات_تصميم_واجهة_وتصميم_داخلي/صور تصميم داخلي للطابق الارضي لمطعم الطيبات/صورة 06.jpg",
+      "/images/real-projects/مطعم_الطيبات_تصميم_واجهة_وتصميم_داخلي/صور تصميم داخلي للطابق الارضي لمطعم الطيبات/صورة 08.jpg",
+      "/images/real-projects/مطعم_الطيبات_تصميم_واجهة_وتصميم_داخلي/صور تصميم داخلي للطابق الارضي لمطعم الطيبات/صورة 1.jpg",
+      "/images/real-projects/مطعم_الطيبات_تصميم_واجهة_وتصميم_داخلي/صور تصميم داخلي للطابق الارضي لمطعم الطيبات/صورة 10.jpg"
     ],
     keySpecs: [
       { label: "Sector", labelAr: "التصنيف", value: "Commercial Hospitality", valueAr: "تجاري وضيافة" },
@@ -210,7 +223,9 @@ export const projectsData: Project[] = [
       "/images/real-projects/ELEVATION_DESIGN_DR_ABED/8 AB.jpg",
       "/images/real-projects/ELEVATION_DESIGN_DR_ABED/13 AB.jpg",
       "/images/real-projects/ELEVATION_DESIGN_DR_ABED/17 AB.jpg",
-      "/images/real-projects/ELEVATION_DESIGN_DR_ABED/19 AB.jpg"
+      "/images/real-projects/ELEVATION_DESIGN_DR_ABED/19 AB.jpg",
+      "/images/real-projects/ELEVATION_DESIGN_DR_ABED/22 AB.jpg",
+      "/images/real-projects/ELEVATION_DESIGN_DR_ABED/25 AB.jpg"
     ],
     keySpecs: [
       { label: "Facade Type", labelAr: "نوع الواجهة", value: "Aluminium Cladding & Natural Marble", valueAr: "واجهة حديثة كابوند ورخام طبيعي" }
@@ -240,7 +255,8 @@ export const projectsData: Project[] = [
     gallery: [
       "/images/real-projects/HAMDAN_BUIDING/IMG_20200715_135725.jpg",
       "/images/real-projects/HAMDAN_BUIDING/IMG_20200715_135747.jpg",
-      "/images/real-projects/HAMDAN_BUIDING/IMG_20200715_135750.jpg"
+      "/images/real-projects/HAMDAN_BUIDING/IMG_20200715_135750.jpg",
+      "/images/real-projects/HAMDAN_BUIDING/IMG_20200715_135756.jpg"
     ],
     keySpecs: [
       { label: "Structural Audit", labelAr: "الأعمال الإنشائية", value: "Raft Foundations & Concrete Lab Tests", valueAr: "أساسات حصيرة مسلحة واختبارات خرسانة" }
@@ -270,7 +286,8 @@ export const projectsData: Project[] = [
     gallery: [
       "/images/real-projects/NEMER_VILLA/1.jpg",
       "/images/real-projects/NEMER_VILLA/2.jpg",
-      "/images/real-projects/NEMER_VILLA/3.jpg"
+      "/images/real-projects/NEMER_VILLA/3.jpg",
+      "/images/real-projects/NEMER_VILLA/4.jpg"
     ],
     keySpecs: [
       { label: "Property Type", labelAr: "نوع العقار", value: "Private Detached Villa", valueAr: "فيلا سكنية مستقلة" }
@@ -300,7 +317,11 @@ export const projectsData: Project[] = [
     gallery: [
       "/images/real-projects/HOUSE_USA/1.jpeg",
       "/images/real-projects/HOUSE_USA/2.jpeg",
-      "/images/real-projects/HOUSE_USA/3.jpeg"
+      "/images/real-projects/HOUSE_USA/3.jpeg",
+      "/images/real-projects/HOUSE_USA/4.jpeg",
+      "/images/real-projects/HOUSE_USA/5.jpeg",
+      "/images/real-projects/HOUSE_USA/6.jpeg",
+      "/images/real-projects/HOUSE_USA/7.jpeg"
     ],
     keySpecs: [
       { label: "Building Code", labelAr: "كود البناء", value: "US IRC Standard Compliance", valueAr: "كود البناء الأمريكي IRC" }
@@ -329,7 +350,20 @@ export const projectsData: Project[] = [
     mainImage: "/images/real-projects/ALWIHDA_SCHOOL_INTERIOR_DESIGN/تصميم داخلي لغرفة الاجتماعات/M 3.jpg",
     gallery: [
       "/images/real-projects/ALWIHDA_SCHOOL_INTERIOR_DESIGN/تصميم داخلي لغرفة الاجتماعات/M 3.jpg",
-      "/images/real-projects/ALWIHDA_SCHOOL_INTERIOR_DESIGN/تصميم داخلي لغرفة الاجتماعات/M 5.jpg"
+      "/images/real-projects/ALWIHDA_SCHOOL_INTERIOR_DESIGN/تصميم داخلي لغرفة الاجتماعات/M 5.jpg",
+      "/images/real-projects/ALWIHDA_SCHOOL_INTERIOR_DESIGN/تصميم داخلي لغرفة الاجتماعات/M 6.jpg",
+      "/images/real-projects/ALWIHDA_SCHOOL_INTERIOR_DESIGN/تصميم داخلي لغرفة المعلمات/1 T.jpg",
+      "/images/real-projects/ALWIHDA_SCHOOL_INTERIOR_DESIGN/تصميم داخلي لغرفة المعلمات/3 T.jpg",
+      "/images/real-projects/ALWIHDA_SCHOOL_INTERIOR_DESIGN/تصميم داخلي لغرفة المعلمات/4 T.jpg",
+      "/images/real-projects/ALWIHDA_SCHOOL_INTERIOR_DESIGN/تصميم داخلي لغرفة المدير/O 6.jpg",
+      "/images/real-projects/ALWIHDA_SCHOOL_INTERIOR_DESIGN/تصميم داخلي لغرفة المدير/O 7.jpg",
+      "/images/real-projects/ALWIHDA_SCHOOL_INTERIOR_DESIGN/تصميم داخلي لغرفة المدير/O 8.jpg",
+      "/images/real-projects/ALWIHDA_SCHOOL_INTERIOR_DESIGN/تصميم داخلي مختبر العلوم/1.jpg",
+      "/images/real-projects/ALWIHDA_SCHOOL_INTERIOR_DESIGN/تصميم داخلي مختبر العلوم/5.jpg",
+      "/images/real-projects/ALWIHDA_SCHOOL_INTERIOR_DESIGN/تصميم داخلي مختبر العلوم/9.jpg",
+      "/images/real-projects/ALWIHDA_SCHOOL_INTERIOR_DESIGN/تصميم داخلي للغرفة متعددة الاغراض/3.jpg",
+      "/images/real-projects/ALWIHDA_SCHOOL_INTERIOR_DESIGN/تصميم داخلي للغرفة متعددة الاغراض/4.jpg",
+      "/images/real-projects/ALWIHDA_SCHOOL_INTERIOR_DESIGN/تصميم داخلي للغرفة متعددة الاغراض/5.jpg"
     ],
     keySpecs: [
       { label: "Facilities Designed", labelAr: "المرافق المصممة", value: "Conference Rooms, Labs & Administrative Suites", valueAr: "غرف اجتماعات، مختبرات، ومكاتب إدارة" }
@@ -388,7 +422,8 @@ export const projectsData: Project[] = [
     gallery: [
       "/images/real-projects/OSAMA_INTERIOR/1A.jpg",
       "/images/real-projects/OSAMA_INTERIOR/2A.jpg",
-      "/images/real-projects/OSAMA_INTERIOR/3A.jpg"
+      "/images/real-projects/OSAMA_INTERIOR/3A.jpg",
+      "/images/real-projects/OSAMA_INTERIOR/4A.jpg"
     ],
     keySpecs: [
       { label: "Interior Style", labelAr: "الأسلوب", value: "Modern Minimalist Interior", valueAr: "مودرن مينيماليست" }
@@ -418,11 +453,188 @@ export const projectsData: Project[] = [
     gallery: [
       "/images/real-projects/صور_تصميم_داخلي_شقة_خالد_ساق_الله/111.jpg",
       "/images/real-projects/صور_تصميم_داخلي_شقة_خالد_ساق_الله/333.jpg",
-      "/images/real-projects/صور_تصميم_داخلي_شقة_خالد_ساق_الله/555.jpg"
+      "/images/real-projects/صور_تصميم_داخلي_شقة_خالد_ساق_الله/555.jpg",
+      "/images/real-projects/صور_تصميم_داخلي_شقة_خالد_ساق_الله/666.jpg",
+      "/images/real-projects/صور_تصميم_داخلي_شقة_خالد_ساق_الله/777.jpg",
+      "/images/real-projects/صور_تصميم_داخلي_شقة_خالد_ساق_الله/7777.jpg",
+      "/images/real-projects/صور_تصميم_داخلي_شقة_خالد_ساق_الله/888.jpg"
     ],
     keySpecs: [
       { label: "Project Scope", labelAr: "نوع المشروع", value: "Full Interior Design & Turnkey Fit-out", valueAr: "تجهيز وتشطيب سكنى كامل" }
     ],
     featured: false
+  },
+  {
+    id: "sami-appartment",
+    title: "Sami Apartment Interior Design",
+    titleAr: "التصميم الداخلي لشقة سامي السكنية",
+    category: "Interior",
+    categoryAr: "تصميم داخلي وديكور",
+    client: "Sami Family",
+    clientAr: "عائلة سامي",
+    year: "2024",
+    location: "Gaza City Center",
+    locationAr: "غزة - وسط المدينة",
+    area: "310 sqm",
+    areaAr: "310 متر مربع",
+    status: "Completed",
+    statusAr: "مكتمل",
+    summary: "Modern interior spatial layout, ambient ceiling cove lighting, and luxury furnishings for Sami Residence.",
+    summaryAr: "تصميم فراغي داخلي حديث، مع توزيع الإضاءة المخفية والديكورات الراعية لشقة عائلة سامي.",
+    fullDescription: "Comprehensive interior renovation blending open plan family living with warm acoustic wood textures and custom marble wall features.",
+    fullDescriptionAr: "مشروع إعادة هيكلة وتصميم داخلي للشقة السكنية يجمع بين رحابة الصالونات المفتوحة وتوزيع الإضاءة المودرن والتكسيات الخشبية الرائعة.",
+    mainImage: "/images/real-projects/SAMI_APPARTMENT/1sami.jpg",
+    gallery: [
+      "/images/real-projects/SAMI_APPARTMENT/1sami.jpg",
+      "/images/real-projects/SAMI_APPARTMENT/18sami.jpg",
+      "/images/real-projects/SAMI_APPARTMENT/21sami.jpg",
+      "/images/real-projects/SAMI_APPARTMENT/6sami.jpg",
+      "/images/real-projects/SAMI_APPARTMENT/q.jpg",
+      "/images/real-projects/SAMI_APPARTMENT/ضضض.jpg"
+    ],
+    keySpecs: [
+      { label: "Interior Style", labelAr: "الطراز الداخلي", value: "Warm Modern Luxury", valueAr: "مودرن راقي مريح" },
+      { label: "Scope", labelAr: "نطاق العمل", value: "Turnkey Interior Fit-out", valueAr: "تصميم وتنفيذ متكامل" }
+    ],
+    featured: false
+  },
+  {
+    id: "jawad-saqallah",
+    title: "Jawad Saqallah Interior Residence",
+    titleAr: "التصميم الداخلي لشقة جواد ساق الله",
+    category: "Interior",
+    categoryAr: "تصميم داخلي وديكور",
+    client: "Jawad Saqallah",
+    clientAr: "جواد ساق الله",
+    year: "2024",
+    location: "Gaza Residential Heights",
+    locationAr: "غزة - الأبراج السكنية",
+    area: "290 sqm",
+    areaAr: "290 متر مربع",
+    status: "Completed",
+    statusAr: "مكتمل",
+    summary: "Contemporary residential interior design with open space planning and bespoke joinery.",
+    summaryAr: "تصميم داخلي عصري لشقة جواد ساق الله مع استغلال أمثل للمساحات والأثاث المدمج.",
+    fullDescription: "Custom residential interior design combining functional room layouts, elegant wall cladding, and high-efficiency lighting features.",
+    fullDescriptionAr: "تصميم داخلي أنيق يراعي توفير المساحات والمخازن الذكية مع تنسيق الألوان الخشبية والأسقف المعلقة المعاصرة.",
+    mainImage: "/images/real-projects/JAWAD_SAQALLAH_INTERIOR_DESIGN/J3.jpg",
+    gallery: [
+      "/images/real-projects/JAWAD_SAQALLAH_INTERIOR_DESIGN/J3.jpg",
+      "/images/real-projects/JAWAD_SAQALLAH_INTERIOR_DESIGN/J 2.jpg",
+      "/images/real-projects/JAWAD_SAQALLAH_INTERIOR_DESIGN/J5.jpg",
+      "/images/real-projects/JAWAD_SAQALLAH_INTERIOR_DESIGN/J6.jpg",
+      "/images/real-projects/JAWAD_SAQALLAH_INTERIOR_DESIGN/J7.jpg",
+      "/images/real-projects/JAWAD_SAQALLAH_INTERIOR_DESIGN/J8.jpg"
+    ],
+    keySpecs: [
+      { label: "Finishing Details", labelAr: "تفاصيل التشطيب", value: "Custom Wood Joinery & LED Strips", valueAr: "تكسيات خشبية وإضاءة خطية" }
+    ],
+    featured: false
+  },
+  {
+    id: "mohammed-saqallah",
+    title: "Mohammed Saqallah Luxury Interior",
+    titleAr: "التصميم الداخلي لشقة محمد ساق الله",
+    category: "Interior",
+    categoryAr: "تصميم داخلي وديكور",
+    client: "Mohammed Saqallah",
+    clientAr: "محمد ساق الله",
+    year: "2024",
+    location: "Gaza - Al-Rimal",
+    locationAr: "غزة - الرمال",
+    area: "340 sqm",
+    areaAr: "340 متر مربع",
+    status: "Completed",
+    statusAr: "مكتمل",
+    summary: "Luxury modern residential apartment design with curated marble flooring and executive salon planning.",
+    summaryAr: "تصميم شقة سكنية فاخرة يشمل الصالونات والمجالس الرئيسية وأرضيات الرخام الراقي.",
+    fullDescription: "Spacious salon layouts, decorative wall moldings, and custom ceiling designs creating an opulent atmosphere.",
+    fullDescriptionAr: "استغلال واسع لصالونات الضيافة والمجالس العائلية مع إضافة ديكورات جدارية وستائر غائرة وإضاءات مخفية.",
+    mainImage: "/images/real-projects/MOHAMMED_SAQALLAH_INTERIOR_DESIGN/1.jpg",
+    gallery: [
+      "/images/real-projects/MOHAMMED_SAQALLAH_INTERIOR_DESIGN/1.jpg",
+      "/images/real-projects/MOHAMMED_SAQALLAH_INTERIOR_DESIGN/12.jpg",
+      "/images/real-projects/MOHAMMED_SAQALLAH_INTERIOR_DESIGN/3.jpg",
+      "/images/real-projects/MOHAMMED_SAQALLAH_INTERIOR_DESIGN/4.jpg",
+      "/images/real-projects/MOHAMMED_SAQALLAH_INTERIOR_DESIGN/6.jpg",
+      "/images/real-projects/MOHAMMED_SAQALLAH_INTERIOR_DESIGN/7.jpg",
+      "/images/real-projects/MOHAMMED_SAQALLAH_INTERIOR_DESIGN/fff.jpg"
+    ],
+    keySpecs: [
+      { label: "Living Area", labelAr: "منطقة المعيشة", value: "Double Salon & Open Dining", valueAr: "صالون مزدوج وسفرة مفتوحة" }
+    ],
+    featured: false
+  },
+  {
+    id: "mohammed-kassab-elevation",
+    title: "Mohammed Kassab Commercial Elevation",
+    titleAr: "تصميم واجهة مبنى محمد كساب",
+    category: "Architectural",
+    categoryAr: "معماري وتصميم واجهات",
+    client: "Mohammed Kassab",
+    clientAr: "محمد كساب",
+    year: "2024",
+    location: "Gaza - Al-Wehda St",
+    locationAr: "غزة - شارع الوحدة",
+    area: "2,800 sqm",
+    areaAr: "2,800 متر مربع",
+    status: "Completed",
+    statusAr: "مكتمل",
+    summary: "Modern architectural facade redesign using composite panels, glass curtain walls, and LED accent lighting.",
+    summaryAr: "تصميم واجهة معمارية تجارية حديثة للمبنى تدمج بين الكابوند والستائر الزجاجية الإضاءة المعمارية.",
+    fullDescription: "Elevation redesign enhancing commercial visibility, tenant attraction, and overall architectural value.",
+    fullDescriptionAr: "دراسة وتصميم واجهة المبنى لرفع الجاذبية التجاري واستقطاب المكاتب والشركات مع الإضاءة الليلية التفاعلية.",
+    mainImage: "/images/real-projects/mohammed_kassab_elevation_design/صورة 1.jpg",
+    gallery: [
+      "/images/real-projects/mohammed_kassab_elevation_design/صورة 1.jpg",
+      "/images/real-projects/mohammed_kassab_elevation_design/صورة 3.jpg",
+      "/images/real-projects/mohammed_kassab_elevation_design/صورة 4.jpg",
+      "/images/real-projects/mohammed_kassab_elevation_design/صورة 5.jpg"
+    ],
+    keySpecs: [
+      { label: "Facade Systems", labelAr: "أنظمة الواجهة", value: "Curtain Walls & Illuminated Cladding", valueAr: "زجاج إستركشر وكابوند مضاء" }
+    ],
+    featured: false
+  },
+  {
+    id: "maher-ghazal-complex",
+    title: "Maher Ghazal Architectural Complex",
+    titleAr: "تصميم وتخطيط مجمع ماهر غزال المعماري",
+    category: "Architectural",
+    categoryAr: "معماري وإنشائي",
+    client: "Maher Ghazal Estate",
+    clientAr: "مجموعة ماهر غزال",
+    year: "2024",
+    location: "Gaza Architectural Complex",
+    locationAr: "غزة - المجمع المعماري",
+    area: "16,000 sqm",
+    areaAr: "16,000 متر مربع",
+    status: "Completed",
+    statusAr: "مكتمل",
+    summary: "Architectural master planning and structural design for Maher Ghazal multi-building development.",
+    summaryAr: "تصميم وتخطيط معماري وإنشائي متكامل لمجمع ماهر غزال متعدد المباني والمسطحات.",
+    fullDescription: "Comprehensive master planning integrating residential blocks, commercial retail, green courtyards, and underground parking.",
+    fullDescriptionAr: "مشروع مجمع معماري شامل يضم أبراج سكنية ومحلات تجارية ومواقف سيارات قبو ومساحات خضراء مشتركة.",
+    mainImage: "/images/real-projects/ماهر_غزال/1.jpg",
+    gallery: [
+      "/images/real-projects/ماهر_غزال/1.jpg",
+      "/images/real-projects/ماهر_غزال/2.jpg",
+      "/images/real-projects/ماهر_غزال/1_5 - Photo.jpg",
+      "/images/real-projects/ماهر_غزال/1_6 - Photo.jpg",
+      "/images/real-projects/ماهر_غزال/2_2 - Photo.jpg",
+      "/images/real-projects/ماهر_غزال/2_3 - Photo.jpg",
+      "/images/real-projects/ماهر_غزال/2_4 - Photo.jpg",
+      "/images/real-projects/ماهر_غزال/2_5 - Photo.jpg",
+      "/images/real-projects/ماهر_غزال/2_6 - Photo.jpg",
+      "/images/real-projects/ماهر_غزال/2_7 - Photo.jpg",
+      "/images/real-projects/ماهر_غزال/2_8 - Photo.jpg",
+      "/images/real-projects/ماهر_غزال/2_9 - Photo.jpg",
+      "/images/real-projects/ماهر_غزال/2_10 - Photo.jpg",
+      "/images/real-projects/ماهر_غزال/2_11- Photo.jpg"
+    ],
+    keySpecs: [
+      { label: "Complex Scope", labelAr: "نطاق المجمع", value: "Multi-building Mixed Use Complex", valueAr: "مجمع استثماري وسكني متعدد الأبنية" }
+    ],
+    featured: true
   }
 ];

@@ -42,21 +42,15 @@ const Home = () => {
         <div className="container px-4 px-lg-5 position-relative" style={{ zIndex: 2 }}>
           <div className="row align-items-center g-5">
             <div className="col-lg-7">
-              <div className="hero-logo-badge mb-4">
+              <div className="hero-logo-card mb-4">
                 <img
                   src="/images/ATLAS  logo w arabic.png"
                   alt="Atlas Engineering Logo"
-                  className="hero-logo-img"
+                  className="hero-standalone-logo-img"
                   onError={(e) => {
                     (e.target as HTMLElement).style.display = 'none';
                   }}
                 />
-                <span className="hero-logo-divider"></span>
-                <div>
-                  <span className="hero-logo-text d-block">
-                    {t("أطلس للاستشارات الهندسية", "Atlas Engineering Consultancy")}
-                  </span>
-                </div>
               </div>
               <h1 className="display-4 fw-extrabold text-white mb-4 leading-tight">
                 {t("نبتكر المعمار.. ", "Sculpting Architecture.. ")} <br />
